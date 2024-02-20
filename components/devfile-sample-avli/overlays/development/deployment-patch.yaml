@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-avli
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0073-tenant/tkrw-pr714-0075-0073-app/devfile-sample-avli@sha256:f1b9cf9a17f84d60bca39069c62579acfd0dfc03d96aef69b3ce0c160f76ef99
+        name: my-nodejs
+        resources: {}
+status: {}
